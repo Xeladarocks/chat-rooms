@@ -1,0 +1,15 @@
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/lib/jquery.min.js"></script>
+<script src="/static/test.js"></script>
+
+<div style="float:left;width:100px;border-right:1px solid black;height:300px;padding:10px;">
+	<b>ROOMS</b>
+	<div id="rooms"></div>
+</div>
+<div>
+	<div style="height:250px;width:500px;overflow-y:scroll;overflow-x:hidden;" id="conversation"></div>
+	<textarea id="data" style="width:200px;resize:none;"></textarea>
+    <input type="button" id="datasend" value="send" />
+    <div id="locallist"></div>
+    <span id="newmessagealert" style="visibility:hidden;color:red;width:100%;height:20px;">New messages!</span>
+</div>
